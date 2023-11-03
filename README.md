@@ -2,9 +2,24 @@
 
 A list of various Audio/Speech datasets.
 
+- [Audio/Speech Datasets](#audiospeech-datasets)
+  - [Overview](#overview)
+  - [Task](#task)
+    - [Speech Recognition](#speech-recognition)
+    - [Speech Synthesis](#speech-synthesis)
+    - [Noise](#noise)
+    - [Audio Tagging/Sound Event Detection](#audio-taggingsound-event-detection)
+    - [Speaker Diarization](#speaker-diarization)
+    - [Speaker Recognition](#speaker-recognition)
+    - [(Inverse) Text normalization](#inverse-text-normalization)
+    - [Speech Translation](#speech-translation)
+  - [Reference](#reference)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Overview
 
-- Application
+- Task
   - ASR
   - TTS
   - Noise
@@ -14,10 +29,11 @@ A list of various Audio/Speech datasets.
   - TN/ITN
   - ST
 - Language
-
   - chinese
   - english
   - ohter
+
+## Task
 
 ### Speech Recognition
 
@@ -25,8 +41,8 @@ A list of various Audio/Speech datasets.
 | :--------------------------------- | --------------------------------------------------- | ------------------------------------------------------------ | ------------------------------- |
 | THCHS-30                           | 30                                                  | [[SLR18]](https://www.openslr.org/18/)                       |                                 |
 | Free ST Chinese Mandarin (ST-CMDS) | 110                                                 | [[SLR38]](https://www.openslr.org/38/)                       | 855 speakers, 102600 utterances |
-| Primewords Chinese Corpus Set 1    | 100                                                 | [[SLR47]](https://www.openslr.org/47/)                       | 296 native Chinese speakers     |
-| Aishell                            | 178                                                 | [[SLR33]](https://www.openslr.org/33/)                       |                                 |
+| Primewords Chinese Corpus Set 1    | 99                                                  | [[SLR47]](https://www.openslr.org/47/)                       | 296 native Chinese speakers     |
+| Aishell                            | 179                                                 | [[SLR33]](https://www.openslr.org/33/)                       | 400 speakers                    |
 | Aishell2                           | 1000                                                | [[Website]](https://www.aishelltech.com/aishell_2)           | if available, 1991 speakers     |
 | MAGICDATA Mandarin Read            | 755                                                 | [[SLR68]](https://www.openslr.org/68/)                       |                                 |
 | MAGICDATA Mandarin Conversational  | 180                                                 | [[SLR123]](https://www.openslr.org/123/)                     |                                 |
