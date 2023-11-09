@@ -1,6 +1,6 @@
 # Audio/Speech Datasets
 
-A list of various Audio/Speech datasets. (continuously update)
+A list of various Audio/Speech datasets about Speech Recognition, Speech Synthesis, Noise, Audio Tagging/Sound Event Detection, Speaker Diarization, Speaker Recognition, (Inverse) Text normalization, Speech Translation, Multilingual, etc. (continuously update)
 
 - [Audio/Speech Datasets](#audiospeech-datasets)
   - [Overview](#overview)
