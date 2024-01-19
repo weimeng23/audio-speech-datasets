@@ -98,7 +98,11 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 
 ### Speaker Recognition
 
+
+
 ### (Inverse) Text normalization
+
+
 
 ### Speech Translation
 
@@ -111,3 +115,5 @@ GigaS2S
 - [double22a/speech_dataset: The dataset of Speech Recognition (github.com)](https://github.com/double22a/speech_dataset#the-dataset-of-speech-recognition)
 
 - [talhanai/speech-nlp-datasets: Contains links to publicly available datasets for modeling health outcomes using speech and language. (github.com)](https://github.com/talhanai/speech-nlp-datasets)
+
+- [coqui-ai/open-speech-corpora: 💎 A list of accessible speech corpora for ASR, TTS, and other Speech Technologies (github.com)](https://github.com/coqui-ai/open-speech-corpora)
