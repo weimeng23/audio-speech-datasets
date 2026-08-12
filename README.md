@@ -1,6 +1,6 @@
 # Audio/Speech Datasets
 
-A list of various Audio/Speech datasets about Speech Recognition, Speech Synthesis, Noise, Audio Tagging/Sound Event Detection, Speaker Diarization, Speaker Recognition, (Inverse) Text normalization, Speech Translation, Multilingual, etc. (continuously update)
+A list of various Audio/Speech datasets about Speech Recognition, Speech Synthesis, Noise, Audio Tagging/Sound Event Detection, Speaker Diarization, Speaker Recognition, Speaker and Speech Traits, (Inverse) Text normalization, Speech Translation, Multilingual, etc. (continuously update)
 
 - [Audio/Speech Datasets](#audiospeech-datasets)
   - [Task](#task)
@@ -10,6 +10,7 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
     - [Audio Tagging/Sound Event Detection](#audio-taggingsound-event-detection)
     - [Speaker Diarization](#speaker-diarization)
     - [Speaker Recognition](#speaker-recognition)
+    - [Speaker and Speech Traits](#speaker-and-speech-traits)
     - [(Inverse) Text normalization](#inverse-text-normalization)
     - [Speech Translation](#speech-translation)
   - [Reference](#reference)
@@ -19,7 +20,7 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 > [!NOTE]
 > **License / Terms:** Official licenses are listed before additional usage terms. `Not stated` does not imply unrestricted use.
 >
-> **Access:** `Direct` = direct download; `Registration` = account or contact information required; `Gated` = terms must be accepted; `Application` = access must be requested; `Unavailable` = no working official download was found.
+> **Access:** `Direct` = direct download; `Registration` = account or contact information required; `Gated` = terms must be accepted; `Application` = access must be requested; `Unavailable` = no working official download was found. Labels may be combined when more than one requirement applies.
 >
 > Metadata reviewed: 2026-08-12.
 
@@ -42,8 +43,8 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | [MAGICDATA Mandarin Conversational (RAMC)](https://www.openslr.org/123/) | 180 | CC BY-NC-ND 4.0 | Direct |
 | [AliMeeting (M2MeT)](https://www.openslr.org/119/) | 118.75 | CC BY-SA 4.0 | Direct |
 | [WenetSpeech](https://wenet-e2e.github.io/WenetSpeech/) | 22,400+ | CC BY 4.0 · non-commercial terms | Application |
-| [TAL-ASR](https://ai.100tal.com/openData/voice) | 100 | [Research use only](https://ai.100tal.com/dataset-auth) | Registration |
-| [TAL-CSASR](https://ai.100tal.com/openData/voice) | 587 | [Research use only](https://ai.100tal.com/dataset-auth) | Registration |
+| [TAL-ASR (Adult Chinese Teaching Audio)](https://ai.100tal.com/openData/voice) | 100 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
+| [TALCS / TAL-CSASR](https://ai.100tal.com/openData/voice) | 587 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
 | [DiDiSpeech](https://athena-team.github.io/DiDiSpeech/) | 800 | Not stated | Unavailable |
 
 - The official `aidatatang_200zh` download is currently unavailable; the entry and linked metadata/license record are retained.
@@ -105,6 +106,23 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | [AliMeeting (M2MeT)](https://www.openslr.org/119/) | 118.75 | CC BY-SA 4.0 | Direct |
 
 ### Speaker Recognition
+
+### Speaker and Speech Traits
+
+| Dataset | Hours | License / Terms | Access |
+| :--- | ---: | :--- | :--- |
+| [TAL-ASR (Adult Chinese Teaching Audio)](https://ai.100tal.com/openData/voice) | 100 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
+| [TAL Adult Chinese Speech Emotion](https://ai.100tal.com/openData/voice) | 12.5 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
+| [TALCS / TAL-CSASR](https://ai.100tal.com/openData/voice) | 587 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
+| [TAL Child Chinese Read Speech](https://ai.100tal.com/openData/voice) | 5.4 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
+| [TAL Child English Read Speech](https://ai.100tal.com/openData/voice) | 4.5 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
+| [TAL Adult Chinese Read Speech](https://ai.100tal.com/openData/voice) | 1,750 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
+| [TAL Adult English Read Speech](https://ai.100tal.com/openData/voice) | 180 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
+| [TAL Adult English Teaching Audio](https://ai.100tal.com/openData/voice) | 160 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
+
+- The child/adult corpus names provide coarse, corpus-level age-group labels; exact ages are not stated on the official page.
+- The 12.5-hour speech-emotion corpus explicitly includes gender metadata. Per-utterance gender labels are not stated for the other corpora and should be verified after access.
+- TAL's terms prohibit commercial use of the datasets and models trained from them, as well as redistribution or creation of derivative datasets.
 
 ### (Inverse) Text normalization
 
