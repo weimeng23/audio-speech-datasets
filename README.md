@@ -3,7 +3,6 @@
 A list of various Audio/Speech datasets about Speech Recognition, Speech Synthesis, Noise, Audio Tagging/Sound Event Detection, Speaker Diarization, Speaker Recognition, (Inverse) Text normalization, Speech Translation, Multilingual, etc. (continuously update)
 
 - [Audio/Speech Datasets](#audiospeech-datasets)
-  - [Overview](#overview)
   - [Task](#task)
     - [Speech Recognition](#speech-recognition)
     - [Speech Synthesis](#speech-synthesis)
@@ -17,67 +16,59 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-## Overview
-
-- Task
-  - ASR
-  - TTS
-  - Noise
-  - Audio/Sound
-  - SD
-  - SR
-  - TN/ITN
-  - ST
-- Language
-  - chinese
-  - english
-  - ohter
-
 ## Task
 
 ### Speech Recognition
 
-#### chinese
+#### Chinese
 
 | Name                                     | Duration(hours)                     | Links                                                        | Comments                                                     |
 | :--------------------------------------- | ----------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | THCHS-30                                 | 30                                  | [[SLR18]](https://www.openslr.org/18/)                       | train 30 speakers, 10893 utterances<br />test 10 speakers, 2496 utterances |
-| Aishell                                  | 179                                 | [[SLR33]](https://www.openslr.org/33/)                       | 400 speakers                                                 |
-| Aishell2                                 | 1000                                | [[Website]](https://www.aishelltech.com/aishell_2)           | **if available**, 1991 speakers                              |
+| AISHELL-1                                | 178                                 | [[SLR33]](https://www.openslr.org/33/)                       | 400 speakers                                                 |
+| AISHELL-2                                | 1000                                | [[Website]](https://www.aishelltech.com/aishell_2)           | 1991 speakers                                                |
 | Free ST Chinese Mandarin (ST-CMDS)       | 110                                 | [[SLR38]](https://www.openslr.org/38/)                       | 855 speakers, 102600 utterances                              |
 | Primewords Chinese Corpus Set 1          | 99                                  | [[SLR47]](https://www.openslr.org/47/)                       | 296 native Chinese speakers                                  |
 | aidatatang_200zh                         | 200                                 | [[SLR62]](https://www.openslr.org/62/)                       | 600 speakers                                                 |
-| aidatatang_1505zh                        | 1505                                | [[Github]](https://github.com/xiayongtao/aidatatang_1505zh)  | **if available**                                             |
+| aidatatang_1505zh                        | 1505                                | [[GitHub]](https://github.com/xiayongtao/aidatatang_1505zh)  |                                                              |
 | MAGICDATA Mandarin Read                  | 755                                 | [[SLR68]](https://www.openslr.org/68/)                       | 1080 speakers                                                |
 | MAGICDATA Mandarin Conversational (RAMC) | 180                                 | [[SLR123]](https://www.openslr.org/123/)                     | 663 speakers                                                 |
 | AliMeeting (M2MeT)                       | 118.75 (train/dev/test 104.75/4/10) | [[SLR119]](https://www.openslr.org/119/)                     | ASR, SD                                                      |
-| WenetSpeech                              | 10000+                              | [[SLR121]](https://www.openslr.org/121/)<br />[[Github]](https://github.com/wenet-e2e/WenetSpeech)<br />[[Website]](https://wenet-e2e.github.io/WenetSpeech/) |                                                              |
+| WenetSpeech                              | 10000+                              | [[SLR121]](https://www.openslr.org/121/)<br />[[GitHub]](https://github.com/wenet-e2e/WenetSpeech)<br />[[Website]](https://wenet-e2e.github.io/WenetSpeech/) |                                                              |
 | TAL-ASR                                  | 100                                 | [[Website]](https://ai.100tal.com/openData/voice)            | 80+ speakers                                                 |
 | TAL-CSASR                                | 587                                 | [[Website]](https://ai.100tal.com/openData/voice)            | code-switching, 200+ speakers                                |
-| didispeech                               |                                     |                                                              | **if available**                                             |
+| DiDiSpeech                               | 800                                 | [[Paper]](https://arxiv.org/abs/2010.09275)<br />[[Project]](https://athena-team.github.io/DiDiSpeech/) | 6000 speakers, 48 kHz; ASR, TTS, and voice conversion        |
 
-#### english
+#### English
 
 | Name                           | Duration(hours)                                     | Links                                                        | Comments                                   |
 | :----------------------------- | --------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------ |
 | LibriSpeech                    | 1000                                                | [[SLR12]](https://www.openslr.org/12/)<br />[[LM]](https://www.openslr.org/11/) |                                            |
-| GigaSpeech                     | 33,000+ for unsupervised<br />10,000 for supervised | [[Github]](https://github.com/SpeechColab/GigaSpeech)        |                                            |
-| Multilingual LibriSpeech (MLS) |                                                     | [[SLR94]](https://www.openslr.org/94/)                       | Multilingual                               |
-| libri-light                    | 60,000 unlabelled speech                            | [[Github]](https://github.com/facebookresearch/libri-light)  | pretraining, unsupervised, semi-supervised |
-| libriheavy                     | 50,000                                              | [[Github]](https://github.com/k2-fsa/libriheavy)             | casing, punctuation, context               |
-| Spgispeech                     |                                                     |                                                              |                                            |
-| People's Speech                |                                                     |                                                              |                                            |
+| GigaSpeech                     | 33,000+ total<br />10,000 transcribed                | [[GitHub]](https://github.com/SpeechColab/GigaSpeech)        | supervised, semi-supervised, and unsupervised learning       |
+| Libri-Light                    | 60,000+ unlabelled                                  | [[GitHub]](https://github.com/facebookresearch/libri-light)  | pretraining, unsupervised, semi-supervised                   |
+| LibriHeavy                     | 50,000                                              | [[GitHub]](https://github.com/k2-fsa/libriheavy)             | casing, punctuation, context                                 |
+| SPGISpeech                     | 5000                                                | [[Dataset]](https://huggingface.co/datasets/kensho/spgispeech)<br />[[Paper]](https://arxiv.org/abs/2104.02014) | financial earnings calls, fully formatted transcriptions     |
+| The People's Speech           | 30,000+                                             | [[Website]](https://mlcommons.org/datasets/peoples-speech/)  | transcribed conversational English                           |
+
+#### Multilingual
+
+| Name                           | Duration(hours) | Links                                  | Comments                                                        |
+| :----------------------------- | --------------- | -------------------------------------- | --------------------------------------------------------------- |
+| Multilingual LibriSpeech (MLS) | 50,000+         | [[SLR94]](https://www.openslr.org/94/) | English, German, Dutch, Spanish, French, Italian, Portuguese, Polish |
 
 ### Speech Synthesis
 
-#### chinese
+#### Chinese
 
-| Name      | Duration(hours) | Links                                              | Comments                                              |
-| :-------- | --------------- | -------------------------------------------------- | ----------------------------------------------------- |
-| AISHELL-3 | 85              | [[Website]](https://www.aishelltech.com/aishell_3) | 44.1k, 218 native Chinese spearkers, 88035 utterances |
-| LibriTTS  |                 |                                                    |                                                       |
-|           |                 |                                                    |                                                       |
-|           |                 |                                                    |                                                       |
+| Name      | Duration(hours) | Links                                  | Comments                                        |
+| :-------- | --------------- | -------------------------------------- | ----------------------------------------------- |
+| AISHELL-3 | 85              | [[SLR93]](https://www.openslr.org/93/) | 218 native Mandarin speakers, 88,035 utterances |
+
+#### English
+
+| Name     | Duration(hours) | Links                                  | Comments                         |
+| :------- | --------------- | -------------------------------------- | -------------------------------- |
+| LibriTTS | 585             | [[SLR60]](https://www.openslr.org/60/) | read English speech, 24 kHz audio |
 
 ### Noise
 
@@ -98,17 +89,14 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 
 ### Speaker Recognition
 
-
-
 ### (Inverse) Text normalization
-
-
 
 ### Speech Translation
 
-GigaST
-
-GigaS2S
+| Name    | Duration(hours) | Links                                                                  | Comments                                         |
+| :------ | --------------- | ---------------------------------------------------------------------- | ------------------------------------------------ |
+| GigaST  | 10,000          | [[Website]](https://st-benchmark.github.io/resources/GigaST)           | English-to-German and English-to-Chinese         |
+| GigaS2S | Not stated      | [[GitHub]](https://github.com/SpeechTranslation/GigaS2S)               | English-to-Chinese; synthetic target speech      |
 
 ## Reference
 
