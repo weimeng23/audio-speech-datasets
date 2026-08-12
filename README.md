@@ -61,7 +61,7 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | [Libri-Light](https://github.com/facebookresearch/libri-light) | 60,000+ | Not stated | Direct |
 | [LibriHeavy](https://github.com/k2-fsa/libriheavy) | 50,000 | Apache-2.0 repository · audio terms not stated | Direct |
 | [SPGISpeech](https://huggingface.co/datasets/kensho/spgispeech) | 5,000 | Custom terms · research use only | Gated |
-| [The People's Speech](https://huggingface.co/datasets/MLCommons/peoples_speech) | 30,000+ | CC BY 2.0/2.5/3.0/4.0 · CC BY-SA 3.0/4.0 | Direct |
+| [The People's Speech](https://huggingface.co/datasets/MLCommons/peoples_speech) | 30,000+ | CC BY 4.0 / CC BY-SA | Direct |
 
 - GigaSpeech contains more than 33,000 hours in total, of which about 10,000 hours are transcribed; its audio remains subject to source-owner rights and the dataset's additional terms.
 - Libri-Light's repository license applies to the accompanying code; no explicit dataset license was found on the official dataset page.
