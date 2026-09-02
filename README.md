@@ -22,7 +22,7 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 >
 > **Access:** `Direct` = direct download; `Registration` = account or contact information required; `Gated` = terms must be accepted; `Application` = access must be requested; `Unavailable` = no working official download was found. Labels may be combined when more than one requirement applies.
 >
-> Metadata reviewed: 2026-08-12.
+> Metadata reviewed: 2026-09-02.
 
 ## Task
 
@@ -73,6 +73,13 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | Dataset | Hours | License / Terms | Access |
 | :--- | ---: | :--- | :--- |
 | [Multilingual LibriSpeech (MLS)](https://www.openslr.org/94/) | 50,000+ | CC BY 4.0 | Direct |
+| [FLEURS](https://huggingface.co/datasets/google/fleurs) | ~1,200 | CC BY 4.0 | Direct |
+| [YODAS](https://huggingface.co/datasets/espnet/yodas) | 369,510 | CC BY 3.0 | Direct |
+| [VoxPopuli](https://github.com/facebookresearch/voxpopuli) | 1,791 transcribed | CC0-1.0 · [source legal notice](https://www.europarl.europa.eu/legal-notice/en/) | Direct |
+
+- FLEURS is a 102-language read-speech benchmark built from 2,009 parallel FLoRes sentences, with approximately 12 hours per language and speaker-disjoint train/dev/test splits. It supports ASR, spoken language identification, and speech-to-text retrieval, and includes Mandarin Chinese and Cantonese. It is also available through [TensorFlow Datasets](https://www.tensorflow.org/datasets/catalog/xtreme_s).
+- The linked YODAS release contains 369,510 hours of segmented 16 kHz YouTube speech with user-provided or automatically generated captions across 149 languages. Its `manual` label means that captions were uploaded by users, not necessarily transcribed by humans; treat the transcripts as weak labels and validate them before supervised training. [YODAS2](https://huggingface.co/datasets/espnet/yodas2) packages the same underlying data as unsegmented, video-level 24 kHz audio with timestamped utterances, so its hours should not be added to YODAS. The wider YODAS project reports more than 500,000 hours when additional subsets are included.
+- The [VoxPopuli Hugging Face ASR release](https://huggingface.co/datasets/facebook/voxpopuli) contains 1,791 transcribed hours across 16 core European languages, plus a 29-hour non-native English test set. The wider project also provides approximately 384,000 hours of unlabelled speech across 23 languages and 17,300 hours of interpretation data. Recordings come from European Parliament events; the dataset is CC0, while the raw source remains subject to the European Parliament legal notice.
 
 ### Speech Synthesis
 
@@ -132,9 +139,13 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | :--- | ---: | :--- | :--- |
 | [GigaST](https://st-benchmark.github.io/resources/GigaST) | 10,000 | CC BY-NC 4.0 | Direct |
 | [GigaS2S](https://github.com/SpeechTranslation/GigaS2S) | — | CC BY 4.0 | Direct |
+| [FLEURS](https://huggingface.co/datasets/google/fleurs) | ~1,200 | CC BY 4.0 | Direct |
+| [VoxPopuli](https://github.com/facebookresearch/voxpopuli) | 17,300 | CC0-1.0 · [source legal notice](https://www.europarl.europa.eu/legal-notice/en/) | Direct |
 
 - GigaST provides English-to-German and English-to-Chinese translations; the source audio follows GigaSpeech's separate access terms.
 - GigaS2S provides English-to-Chinese synthetic target speech.
+- FLEURS records 2,009 parallel sentences in 102 languages, enabling multilingual speech-to-text translation evaluation. Its limited per-language scale makes it primarily a benchmark rather than a large translation training corpus.
+- VoxPopuli provides speech-to-speech interpretation data covering 15×15 language directions from European Parliament events; unlike GigaS2S, its target speech consists of real parliamentary interpretation rather than synthesized speech.
 
 ## Reference
 
