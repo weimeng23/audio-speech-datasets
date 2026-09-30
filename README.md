@@ -47,10 +47,11 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | [TALCS / TAL-CSASR](https://ai.100tal.com/openData/voice) | 587 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
 | [DiDiSpeech](https://athena-team.github.io/DiDiSpeech/) | 800 | Not stated | Unavailable |
 
-- The official `aidatatang_200zh` download is currently unavailable; the entry and linked metadata/license record are retained.
-- AliMeeting is also listed under [Speaker Diarization](#speaker-diarization). Its train/dev/test split is 104.75/4/10 hours.
-- WenetSpeech contains more than 22,400 hours in total, including more than 10,000 hours of high-quality labeled data. Its official page states CC BY 4.0 and separately limits the release to non-commercial use.
-- DiDiSpeech's former official download is no longer available; third-party mirrors are not treated as authoritative license sources.
+> [!NOTE]
+> - **aidatatang_200zh:** The official download is currently unavailable; the entry and linked metadata/license record are retained.
+> - **AliMeeting:** Also listed under [Speaker Diarization](#speaker-diarization). Its train/dev/test split is 104.75/4/10 hours.
+> - **WenetSpeech:** Contains more than 22,400 hours in total, including more than 10,000 hours of high-quality labeled data. Its official page states CC BY 4.0 and separately limits the release to non-commercial use.
+> - **DiDiSpeech:** Its former official download is no longer available; third-party mirrors are not treated as authoritative license sources.
 
 #### English
 
@@ -63,10 +64,11 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | [SPGISpeech](https://huggingface.co/datasets/kensho/spgispeech) | 5,000 | Custom terms · research use only | Gated |
 | [The People's Speech](https://huggingface.co/datasets/MLCommons/peoples_speech) | 30,000+ | CC BY 4.0 / CC BY-SA | Direct |
 
-- GigaSpeech contains more than 33,000 hours in total, of which about 10,000 hours are transcribed; its audio remains subject to source-owner rights and the dataset's additional terms.
-- Libri-Light's repository license applies to the accompanying code; no explicit dataset license was found on the official dataset page.
-- LibriHeavy's Apache-2.0 license covers its repository; its audio is inherited from Libri-Light, whose official page does not state a dataset license.
-- The People's Speech license varies by source subset; check the per-file metadata before reuse.
+> [!NOTE]
+> - **GigaSpeech:** Contains more than 33,000 hours in total, of which about 10,000 hours are transcribed; its audio remains subject to source-owner rights and the dataset's additional terms.
+> - **Libri-Light:** Its repository license applies to the accompanying code; no explicit dataset license was found on the official dataset page.
+> - **LibriHeavy:** Its Apache-2.0 license covers its repository; its audio is inherited from Libri-Light, whose official page does not state a dataset license.
+> - **The People's Speech:** Its license varies by source subset; check the per-file metadata before reuse.
 
 #### Multilingual
 
@@ -77,9 +79,10 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | [YODAS](https://huggingface.co/datasets/espnet/yodas) | 369,510 | CC BY 3.0 | Direct |
 | [VoxPopuli](https://github.com/facebookresearch/voxpopuli) | 1,791 transcribed | CC0-1.0 · [source legal notice](https://www.europarl.europa.eu/legal-notice/en/) | Direct |
 
-- FLEURS is a 102-language read-speech benchmark built from 2,009 parallel FLoRes sentences, with approximately 12 hours per language and speaker-disjoint train/dev/test splits. It supports ASR, spoken language identification, and speech-to-text retrieval, and includes Mandarin Chinese and Cantonese. It is also available through [TensorFlow Datasets](https://www.tensorflow.org/datasets/catalog/xtreme_s).
-- The linked YODAS release contains 369,510 hours of segmented 16 kHz YouTube speech with user-provided or automatically generated captions across 149 languages. Its `manual` label means that captions were uploaded by users, not necessarily transcribed by humans; treat the transcripts as weak labels and validate them before supervised training. [YODAS2](https://huggingface.co/datasets/espnet/yodas2) packages the same underlying data as unsegmented, video-level 24 kHz audio with timestamped utterances, so its hours should not be added to YODAS. The wider YODAS project reports more than 500,000 hours when additional subsets are included.
-- The [VoxPopuli Hugging Face ASR release](https://huggingface.co/datasets/facebook/voxpopuli) contains 1,791 transcribed hours across 16 core European languages, plus a 29-hour non-native English test set. The wider project also provides approximately 384,000 hours of unlabelled speech across 23 languages and 17,300 hours of interpretation data. Recordings come from European Parliament events; the dataset is CC0, while the raw source remains subject to the European Parliament legal notice.
+> [!NOTE]
+> - **FLEURS:** A 102-language read-speech benchmark built from 2,009 parallel FLoRes sentences, with approximately 12 hours per language and speaker-disjoint train/dev/test splits. It supports ASR, spoken language identification, and speech-to-text retrieval, and includes Mandarin Chinese and Cantonese. It is also available through [TensorFlow Datasets](https://www.tensorflow.org/datasets/catalog/xtreme_s).
+> - **YODAS:** The linked release contains 369,510 hours of segmented 16 kHz YouTube speech with user-provided or automatically generated captions across 149 languages. Its `manual` label means that captions were uploaded by users, not necessarily transcribed by humans; treat the transcripts as weak labels and validate them before supervised training. [YODAS2](https://huggingface.co/datasets/espnet/yodas2) packages the same underlying data as unsegmented, video-level 24 kHz audio with timestamped utterances, so its hours should not be added to YODAS. The wider YODAS project reports more than 500,000 hours when additional subsets are included.
+> - **VoxPopuli:** The [Hugging Face ASR release](https://huggingface.co/datasets/facebook/voxpopuli) contains 1,791 transcribed hours across 16 core European languages, plus a 29-hour non-native English test set. The wider project also provides approximately 384,000 hours of unlabelled speech across 23 languages and 17,300 hours of interpretation data. Recordings come from European Parliament events; the dataset is CC0, while the raw source remains subject to the European Parliament legal notice.
 
 ### Speech Synthesis
 
@@ -127,9 +130,10 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | [TAL Adult English Read Speech](https://ai.100tal.com/openData/voice) | 180 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
 | [TAL Adult English Teaching Audio](https://ai.100tal.com/openData/voice) | 160 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
 
-- The child/adult corpus names provide coarse, corpus-level age-group labels; exact ages are not stated on the official page.
-- The 12.5-hour speech-emotion corpus explicitly includes gender metadata. Per-utterance gender labels are not stated for the other corpora and should be verified after access.
-- TAL's terms prohibit commercial use of the datasets and models trained from them, as well as redistribution or creation of derivative datasets.
+> [!NOTE]
+> - **TAL child/adult corpora:** The corpus names provide coarse, corpus-level age-group labels; exact ages are not stated on the official page.
+> - **TAL Adult Chinese Speech Emotion:** The 12.5-hour corpus explicitly includes gender metadata. Per-utterance gender labels are not stated for the other corpora and should be verified after access.
+> - **TAL usage terms:** Prohibit commercial use of the datasets and models trained from them, as well as redistribution or creation of derivative datasets.
 
 ### (Inverse) Text normalization
 
@@ -142,10 +146,11 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | [FLEURS](https://huggingface.co/datasets/google/fleurs) | ~1,200 | CC BY 4.0 | Direct |
 | [VoxPopuli](https://github.com/facebookresearch/voxpopuli) | 17,300 | CC0-1.0 · [source legal notice](https://www.europarl.europa.eu/legal-notice/en/) | Direct |
 
-- GigaST provides English-to-German and English-to-Chinese translations; the source audio follows GigaSpeech's separate access terms.
-- GigaS2S provides English-to-Chinese synthetic target speech.
-- FLEURS records 2,009 parallel sentences in 102 languages, enabling multilingual speech-to-text translation evaluation. Its limited per-language scale makes it primarily a benchmark rather than a large translation training corpus.
-- VoxPopuli provides speech-to-speech interpretation data covering 15×15 language directions from European Parliament events; unlike GigaS2S, its target speech consists of real parliamentary interpretation rather than synthesized speech.
+> [!NOTE]
+> - **GigaST:** Provides English-to-German and English-to-Chinese translations; the source audio follows GigaSpeech's separate access terms.
+> - **GigaS2S:** Provides English-to-Chinese synthetic target speech.
+> - **FLEURS:** Records 2,009 parallel sentences in 102 languages, enabling multilingual speech-to-text translation evaluation. Its limited per-language scale makes it primarily a benchmark rather than a large translation training corpus.
+> - **VoxPopuli:** Provides speech-to-speech interpretation data covering 15×15 language directions from European Parliament events; unlike GigaS2S, its target speech consists of real parliamentary interpretation rather than synthesized speech.
 
 ## Reference
 
