@@ -11,6 +11,8 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
     - [Speaker Diarization](#speaker-diarization)
     - [Speaker Recognition](#speaker-recognition)
     - [Speaker and Speech Traits](#speaker-and-speech-traits)
+      - [Attribute-annotated datasets](#attribute-annotated-datasets)
+      - [Child/Adult Speech Resources](#childadult-speech-resources)
     - [(Inverse) Text normalization](#inverse-text-normalization)
     - [Speech Translation](#speech-translation)
   - [Reference](#reference)
@@ -44,7 +46,6 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | [AliMeeting (M2MeT)](https://www.openslr.org/119/) | 118.75 | CC BY-SA 4.0 | Direct |
 | [WenetSpeech](https://wenet-e2e.github.io/WenetSpeech/) | 22,400+ | CC BY 4.0 · non-commercial terms | Application |
 | [TAL-ASR (Adult Chinese Teaching Audio)](https://ai.100tal.com/openData/voice) | 100 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
-| [TALCS / TAL-CSASR](https://ai.100tal.com/openData/voice) | 587 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
 | [DiDiSpeech](https://athena-team.github.io/DiDiSpeech/) | 800 | Not stated | Unavailable |
 
 > [!NOTE]
@@ -75,6 +76,7 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | Dataset | Hours | License / Terms | Access |
 | :--- | ---: | :--- | :--- |
 | [Multilingual LibriSpeech (MLS)](https://www.openslr.org/94/) | 50,000+ | CC BY 4.0 | Direct |
+| [TALCS / TAL-CSASR](https://ai.100tal.com/openData/voice) | 587 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
 | [FLEURS](https://huggingface.co/datasets/google/fleurs) | ~1,200 | CC BY 4.0 | Direct |
 | [YODAS](https://huggingface.co/datasets/espnet/yodas) | 369,510 | CC BY 3.0 | Direct |
 | [VoxPopuli](https://github.com/facebookresearch/voxpopuli) | 1,791 transcribed | CC0-1.0 · [source legal notice](https://www.europarl.europa.eu/legal-notice/en/) | Direct |
@@ -82,6 +84,7 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | [MOSEL](https://huggingface.co/datasets/FBK-MT/mosel) | 444,035 pseudo-labeled | CC BY 4.0 annotations · source audio terms | Direct |
 
 > [!NOTE]
+> - **TALCS / TAL-CSASR:** Mandarin-English code-switching speech from online English lessons, with paired transcriptions. Also listed under [Child/Adult Speech Resources](#childadult-speech-resources) as adult speech; per-utterance age and gender annotations have not been confirmed.
 > - **FLEURS:** A 102-language read-speech benchmark built from 2,009 parallel FLoRes sentences, with approximately 12 hours per language and speaker-disjoint train/dev/test splits. It supports ASR, spoken language identification, and speech-to-text retrieval, and includes Mandarin Chinese and Cantonese. It is also available through [TensorFlow Datasets](https://www.tensorflow.org/datasets/catalog/xtreme_s).
 > - **YODAS:** The linked release contains 369,510 hours of segmented 16 kHz YouTube speech with user-provided or automatically generated captions across 149 languages. Its `manual` label means that captions were uploaded by users, not necessarily transcribed by humans; treat the transcripts as weak labels and validate them before supervised training. [YODAS2](https://huggingface.co/datasets/espnet/yodas2) packages the same underlying data as unsegmented, video-level 24 kHz audio with timestamped utterances, so its hours should not be added to YODAS. The wider YODAS project reports more than 500,000 hours when additional subsets are included.
 > - **VoxPopuli:** The [Hugging Face ASR release](https://huggingface.co/datasets/facebook/voxpopuli) contains 1,791 transcribed hours across 16 core European languages, plus a 29-hour non-native English test set. The wider project also provides approximately 384,000 hours of unlabelled speech across 23 languages and 17,300 hours of interpretation data. Recordings come from European Parliament events; the dataset is CC0, while the raw source remains subject to the European Parliament legal notice.
@@ -124,10 +127,21 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 
 ### Speaker and Speech Traits
 
+#### Attribute-annotated datasets
+
+| Dataset | Hours | License / Terms | Access |
+| :--- | ---: | :--- | :--- |
+| [TAL Adult Chinese Speech Emotion](https://ai.100tal.com/openData/voice) | 12.5 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
+
+> [!NOTE]
+> - **TAL Adult Chinese Speech Emotion:** Contains 4,541 clips from 42 speakers. Each clip has Pleasure and Arousal scores in [-3, 3]; the official annotation example includes speaker ID and gender. This is a dimensional speech-emotion dataset.
+> - **TAL usage terms:** Prohibit commercial use of the datasets and models trained from them, as well as redistribution or creation of derivative datasets.
+
+#### Child/Adult Speech Resources
+
 | Dataset | Hours | License / Terms | Access |
 | :--- | ---: | :--- | :--- |
 | [TAL-ASR (Adult Chinese Teaching Audio)](https://ai.100tal.com/openData/voice) | 100 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
-| [TAL Adult Chinese Speech Emotion](https://ai.100tal.com/openData/voice) | 12.5 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
 | [TALCS / TAL-CSASR](https://ai.100tal.com/openData/voice) | 587 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
 | [TAL Child Chinese Read Speech](https://ai.100tal.com/openData/voice) | 5.4 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
 | [TAL Child English Read Speech](https://ai.100tal.com/openData/voice) | 4.5 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
@@ -136,8 +150,9 @@ A list of various Audio/Speech datasets about Speech Recognition, Speech Synthes
 | [TAL Adult English Teaching Audio](https://ai.100tal.com/openData/voice) | 160 | [Custom terms · internal research only](https://ai.100tal.com/dataset-auth) | Registration · Gated |
 
 > [!NOTE]
-> - **TAL child/adult corpora:** The corpus names provide coarse, corpus-level age-group labels; exact ages are not stated on the official page.
-> - **TAL Adult Chinese Speech Emotion:** The 12.5-hour corpus explicitly includes gender metadata. Per-utterance gender labels are not stated for the other corpora and should be verified after access.
+> - **Age/gender annotations:** Child/adult groups come from the official corpus names. Exact ages and per-utterance age or gender annotations have not been confirmed; these are candidate audio resources for further annotation and validation.
+> - **TAL-ASR and TALCS:** Also listed under Speech Recognition, with paired transcriptions. TAL-ASR explicitly includes speaker IDs, which do not establish age or gender labels.
+> - **Read speech and adult English teaching audio:** The official page lists WAV audio without stating paired transcripts or per-utterance speaker/attribute labels. Verify the downloaded contents before treating these as supervised ASR, TTS, or attribute-recognition datasets.
 > - **TAL usage terms:** Prohibit commercial use of the datasets and models trained from them, as well as redistribution or creation of derivative datasets.
 
 ### (Inverse) Text normalization
